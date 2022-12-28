@@ -1,6 +1,6 @@
 // Plaats dit bestand op een centrale locatie voor hergebruik in meerdere documenten.
 var organisationConfig = {
-  nl_organisationName: "Logius",
+  nl_organisationName: "MinBZK",
   nl_organisationStylesURL:
     "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
   nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
