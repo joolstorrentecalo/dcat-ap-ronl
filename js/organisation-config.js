@@ -159,7 +159,7 @@ var organisationConfig = {
       authors: ["Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties."],
       date: ""
     },
-    "DAT_EU": {
+    "DATA_EU": {
       href: "https://data.europa.eu/en",
       title: "Semantic Versioning 2.0.0",
       authors: ["The Publications Office of the European Union."],
