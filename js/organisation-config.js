@@ -12,7 +12,7 @@ var organisationConfig = {
     width: 44,
     url: "https://www.logius.nl/standaarden",
   }],
-  
+
   addSectionLinks: true,
   postProcess: [window.respecMermaid.createFigures],
 
@@ -145,13 +145,37 @@ var organisationConfig = {
       image: "https://tools.geostandaarden.nl/respec/style/logos/cc-by-nd.svg",
     },
   },
-	
+
   localBiblio: {
-	"SemVer": {
-            href: "https://semver.org",
-            title: "Semantic Versioning 2.0.0",
-            authors: ["T. Preston-Werner"],
-            date: "June 2013"
-        }
+    "SemVer": {
+      href: "https://semver.org",
+      title: "Semantic Versioning 2.0.0",
+      authors: ["T. Preston-Werner"],
+      date: "June 2013"
     },
+    "DONL": {
+      href: "https://data.overheid.nl",
+      title: "data.overheid.nl",
+      authors: ["Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties."],
+      date: ""
+    },
+    "DAT_EU": {
+      href: "https://data.europa.eu/en",
+      title: "Semantic Versioning 2.0.0",
+      authors: ["The Publications Office of the European Union."],
+      date: ""
+    },
+    "DCATAP_21": {
+      href: "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210",
+      title: "DCAT-AP 2.1",
+      authors: ["The Publications Office of the European Union."],
+      date: ""
+    },
+    "DCAT_20": {
+      href: "https://www.w3.org/TR/vocab-dcat-2/",
+      title: "Data Catalog Vocabulary (DCAT) - Version 2",
+      authors: ["World Wide Web Consortium"],
+      date: "February 2020"
+    }
+  },
 }
