@@ -5,6 +5,7 @@ var respecConfig = {
   specStatus: "WV",
   specType: "st",
   pubDomain: "md",
+  subtitle: "Het applicatie profiel van de Europese DCAT-AP standaard voor uitwisseling met regels.overheid.nl",
   shortName: "actueel",
   publishDate: "2023-01-04",
   publishVersion: "0.0.1",
