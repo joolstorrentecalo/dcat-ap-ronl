@@ -1,6 +1,6 @@
 Deze specificatie is onderdeel van [regels.overheid.nl](https://regels.overheid.nl). 
 
-Doel van dit DCAT profiel is om beschrijvingen van regels te verzamelen in regels.overheid.nl die compatibel zijn met het DCAT-AP_DONL profiel voor [data.overheid.nl](https://data.overheid.nl/).
+Doel van dit DCAT profiel is om beschrijvingen van regels te verzamelen in regels.overheid.nl die compatibel zijn met het DCAT-AP-DONL profiel voor [data.overheid.nl](https://data.overheid.nl/).
 
 Het volgende diagram geeft een overzicht van de basis functionaliteit van het beoogde DCAT-AP-RONL profiel en dient als overzicht van de te definieren beschrijvingen.
 
