@@ -296,6 +296,41 @@ ul.index code{color:inherit}
       ],
       "date": "June 2013",
       "id": "semver"
+    },
+    "DONL": {
+      "href": "https://data.overheid.nl",
+      "title": "data.overheid.nl",
+      "authors": [
+        "Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties."
+      ],
+      "date": "",
+      "id": "donl"
+    },
+    "DAT_EU": {
+      "href": "https://data.europa.eu/en",
+      "title": "Semantic Versioning 2.0.0",
+      "authors": [
+        "The Publications Office of the European Union."
+      ],
+      "date": ""
+    },
+    "DCATAP_21": {
+      "href": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210",
+      "title": "DCAT-AP 2.1",
+      "authors": [
+        "The Publications Office of the European Union."
+      ],
+      "date": "",
+      "id": "dcatap_21"
+    },
+    "DCAT_20": {
+      "href": "https://www.w3.org/TR/vocab-dcat-2/",
+      "title": "Data Catalog Vocabulary (DCAT) - Version 2",
+      "authors": [
+        "World Wide Web Consortium"
+      ],
+      "date": "February 2020",
+      "id": "dcat_20"
     }
   },
   "useLogo": true,
@@ -338,7 +373,7 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/base.css"></head>
 
-<body class="h-entry"><div class="head">
+<body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg" width="44">
   </a> <h1 id="title" class="title">DCAT-AP-RONL (concept)</h1>
     <h2 id="subtitle" class="subtitle">Het applicatie profiel van de Europese DCAT-AP standaard voor uitwisseling met regels.overheid.nl</h2>
@@ -389,7 +424,7 @@ ul.index code{color:inherit}
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Deze specificatie is onderdeel van <a href="https://regels.overheid.nl">regels.overheid.nl</a>. </p>
-<p>Doel van dit DCAT profiel is om beschrijvingen van regels te verzamelen in regels.overheid.nl die compatibel zijn met het DCAT-AP_DONL profiel voor <a href="https://data.overheid.nl/">data.overheid.nl</a>.</p>
+<p>Doel van dit DCAT profiel is om beschrijvingen van regels te verzamelen in regels.overheid.nl die compatibel zijn met het DCAT-AP_DONL profiel voor <a href="https://data.overheid.nl/" id="ref-for-index-term-data-overheid-nl-1">data.overheid.nl</a>.</p>
 <p>Het volgende diagram geeft een overzicht van de basis functionaliteit van het beoogde DCAT-AP-RONL profiel en dient als overzicht van de te definieren beschrijvingen.</p>
 <p>
       </p><figure id="fig-klassen-en-relaties">
@@ -397,19 +432,19 @@ ul.index code{color:inherit}
         <figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Klassen en relaties</span></figcaption>
       </figure>
     <p></p>
-<p>Het is gebaseerd op het <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211">DCAT-AP 2.1</a> dat op zijn beurt gebaseerd is op de <a href="https://www.w3.org/TR/vocab-dcat-2/">DCAT 2.0 van het W3C</a> en de eerdere data.overheid.nl versie <a href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a>.</p>
+<p>Het is gebaseerd op het <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/211">DCAT-AP 2.1</a> dat op zijn beurt gebaseerd is op de <a href="https://www.w3.org/TR/vocab-dcat-2/" id="ref-for-index-term-data-catalog-vocabulary-dcat-version-2-1">DCAT 2.0 van het W3C</a> en de eerdere data.overheid.nl versie <a href="https://dcat-ap-donl.readthedocs.io/en/latest/">DCAT-AP-DONL 1.1</a>.</p>
 </section>
   <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1.1 </bdi>Introductie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.1 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.2 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.3 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">5. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav><section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
 <section id="introductie"><div class="header-wrapper"><h3 id="x1-1-introductie"><bdi class="secno">1.1 </bdi>Introductie</h3><a class="self-link" href="#introductie" aria-label="Permalink for Section 1.1"></a></div>
 <p>De Data Catalog vocabulaire (DCAT) is een standaard met als doel gepubliceerde gegevens en gegevensdiensten te beschrijven. Daardoor kunnen potentiële gebruikers beoordelen of de aangeboden gegevens voor hen relevant zijn en geschikt zijn voor hun gebruik. Dit selectieproces kan ook (gedeeltelijk) automatisch uitgevoerd worden. De geselecteerde bronnen kunnen dankzij de <a data-link-type="dfn" class="respec-offending-element" title="Linking error: not matching `<dfn>`" id="respec-offender-linking-error-not-matching-dfn">DCAT beschrijving</a>en efficiënt benaderd worden voor gebruik, of na detailonderzoek alsnog worden verworpen.</p>
 <p>Daarnaast is het gebruikelijk om <a data-link-type="dfn" class="respec-offending-element" title="Linking error: not matching `<dfn>`" id="respec-offender-linking-error-not-matching-dfn-0">DCAT beschrijving</a>en op centrale systemen te verzamelen – bekend als "harvesting" – om overzichten te maken van alle aangeboden informatie in een bepaald domein, bijvoorbeeld een land of volgens andere criteria. Deze centrale DCAT registers maken het eenvoudig voor gebruikers om door een groot aanbod te zoeken naar nuttige gegevens en data services.</p>
-<p><a data-matched-text="[[[DONL]]]" class="respec-offending-element" title="Couldn't find a match for &quot;DONL&quot;" id="respec-offender-couldn-t-find-a-match-for-donl">[[[DONL]]]</a> is zo'n DCAT dataportaal van de Nederlandse overheid. Een voorbeeld van een ander portaal is die van de EU, namelijk <a data-matched-text="[[[DATA_EU]]]" class="respec-offending-element" title="Couldn't find a match for &quot;DATA_EU&quot;" id="respec-offender-couldn-t-find-a-match-for-data_eu">[[[DATA_EU]]]</a>. De EU leest de DCAT data van data.overheid.nl, daardoor zijn alle datasets van data.overheid.nl ook op data.europa.eu te vinden. Het gebruik van DCAT maakt dit soort cummulatieve verzamelingen mogelijk.</p>
-<p>Het doel van het DCAT-AP-DONL profiel is om betere beschrijvingen te verzamelen in <a data-matched-text="[[[DONL]]]" class="respec-offending-element" title="Couldn't find a match for &quot;DONL&quot;" id="respec-offender-couldn-t-find-a-match-for-donl-0">[[[DONL]]]</a>. Het is ietwat uitgebreider dan de onderliggende <a data-matched-text="[[[DCATAP_21]]]" class="respec-offending-element" title="Couldn't find a match for &quot;DCATAP_21&quot;" id="respec-offender-couldn-t-find-a-match-for-dcatap_21">[[[DCATAP_21]]]</a> en <a data-matched-text="[[[DCAT_20]]]" class="respec-offending-element" title="Couldn't find a match for &quot;DCAT_20&quot;" id="respec-offender-couldn-t-find-a-match-for-dcat_20">[[[DCAT_20]]]</a> profielen van het W3C, zodat het vinden van de juiste gegevens en gegevensdiensten nog makkelijker wordt.</p>
+<p><cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl">data.overheid.nl</a></cite> is zo'n DCAT dataportaal van de Nederlandse overheid. Een voorbeeld van een ander portaal is die van de EU, namelijk <a data-matched-text="[[[DATA_EU]]]" class="respec-offending-element" title="Couldn't find a match for &quot;DATA_EU&quot;" id="respec-offender-couldn-t-find-a-match-for-data_eu">[[[DATA_EU]]]</a>. De EU leest de DCAT data van data.overheid.nl, daardoor zijn alle datasets van data.overheid.nl ook op data.europa.eu te vinden. Het gebruik van DCAT maakt dit soort cummulatieve verzamelingen mogelijk.</p>
+<p>Het doel van het DCAT-AP-DONL profiel is om betere beschrijvingen te verzamelen in <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl">data.overheid.nl</a></cite>. Het is ietwat uitgebreider dan de onderliggende <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210" id="ref-for-index-term-dcat-ap-2-1-1">DCAT-AP 2.1</a></cite> en <cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2/" id="ref-for-index-term-data-catalog-vocabulary-dcat-version-2-2">Data Catalog Vocabulary (DCAT) - Version 2</a></cite> profielen van het W3C, zodat het vinden van de juiste gegevens en gegevensdiensten nog makkelijker wordt.</p>
 <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
 Deze tekst is de introductie van het [DCAT-AP-DONL](https://dataoverheid.github.io/dcat-ap-donl/) toepassingsprofiel .
 </p></div>
 
-<p>Doel van dit DCAT profiel is om beschrijvingen van <strong>regels</strong> te verzamelen in regels.overheid.nl die compatibel zijn met het DCAT-AP-DONL profiel voor <a href="https://data.overheid.nl/">data.overheid.nl</a>.</p>
+<p>Doel van dit DCAT profiel is om beschrijvingen van <strong>regels</strong> te verzamelen in regels.overheid.nl die compatibel zijn met het DCAT-AP-DONL profiel voor <a href="https://data.overheid.nl/" id="ref-for-index-term-data-overheid-nl-2">data.overheid.nl</a>.</p>
 <p>Dit toepassingsprofiel blijft in ontwikkeling. Commentaren, problemen, wensen e.d. kunnen als issue worden gemeld op de <a href="https://github.com/MinBZK/dcat-ap-ronl" target="_blank">Github pagina</a>.</p></section></section><section id="meer-inhoud"><div class="header-wrapper"><h2 id="x2-meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 2."></a></div>
 <section id="afbeeldingen"><div class="header-wrapper"><h3 id="x2-1-afbeeldingen"><bdi class="secno">2.1 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 2.1"></a></div>
 <p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">5. </bdi>Lijst met figuren</a>.</p>
@@ -437,10 +472,9 @@ Deze tekst is de introductie van het [DCAT-AP-DONL](https://dataoverheid.github.
 </section></section><section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x3-mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 3."></a></div>
 <figure id="Mermaidvoorbeeld">
 
-<pre><code class="mermaid hljs" data-processed="true" aria-busy="false">A
-B
-C
-D</code></pre>
+<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 248"><style>
+#diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
+</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,47.77154964846383L44.354817708333336,52.64295804038653C40.151041666666664,57.514366432309224,31.743489583333332,67.25718321615462,27.539713541666668,76.29525827474397C23.3359375,85.33333333333333,23.3359375,93.66666666666667,23.3359375,97.83333333333333L23.3359375,102" marker-end="url(#arrowhead31)" style="fill:none"></path><defs><marker id="arrowhead31" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,47.77154964846383L83.43424479166667,52.64295804038653C87.63802083333333,57.514366432309224,96.04557291666667,67.25718321615462,100.24934895833333,76.29525827474397C104.453125,85.33333333333333,104.453125,93.66666666666667,104.453125,97.83333333333333L104.453125,102" marker-end="url(#arrowhead32)" style="fill:none"></path><defs><marker id="arrowhead32" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,146L23.3359375,150.16666666666666C23.3359375,154.33333333333334,23.3359375,162.66666666666666,27.465494791666668,171.6187357539568C31.595052083333332,180.57080484124694,39.854166666666664,190.14160968249382,43.983723958333336,194.92701210311728L48.11328125,199.71241452374073" marker-end="url(#arrowhead33)" style="fill:none"></path><defs><marker id="arrowhead33" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,146L104.453125,150.16666666666666C104.453125,154.33333333333334,104.453125,162.66666666666666,100.32356770833333,171.6187357539568C96.19401041666667,180.57080484124694,87.93489583333333,190.14160968249382,83.80533854166667,194.92701210311728L79.67578125,199.71241452374073" marker-end="url(#arrowhead34)" style="fill:none"></path><defs><marker id="arrowhead34" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-24" transform="translate(63.89453125,30)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-25" transform="translate(23.3359375,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-22" width="30.671875" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-12)"><foreignObject width="10.671875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-27" transform="translate(104.453125,124)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-29" transform="translate(63.89453125,218)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-22" width="31.5625" height="44" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-12)"><foreignObject width="11.5625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
 <figcaption>Figuur <bdi class="figno">3</bdi> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
 </figure></section>
   <script>
@@ -475,10 +509,31 @@ D</code></pre>
     <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
     <ul class="index">
     <li>
+        [<cite><a class="bibref" data-link-type="biblio" href="#bib-data_eu">DATA_EU</a></cite>] defines the following:
+        <ul>
+          <li>
+    <span class="index-term" data-href="" id="index-term-data_eu" tabindex="0" aria-haspopup="dialog">[[[DATA_EU]]]</span>
+  </li>
+        </ul>
+      </li><li>
+        [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcat_20">DCAT_20</a></cite>] defines the following:
+        <ul>
+          <li>
+    <span class="index-term" data-href="https://www.w3.org/TR/vocab-dcat-2/" id="index-term-data-catalog-vocabulary-dcat-version-2" tabindex="0" aria-haspopup="dialog">Data Catalog Vocabulary (DCAT) - Version 2</span>
+  </li>
+        </ul>
+      </li><li>
+        [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcatap_21">DCATAP_21</a></cite>] defines the following:
+        <ul>
+          <li>
+    <span class="index-term" data-href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210" id="index-term-dcat-ap-2-1" tabindex="0" aria-haspopup="dialog">DCAT-AP 2.1</span>
+  </li>
+        </ul>
+      </li><li>
         [<cite><a class="bibref" data-link-type="biblio" href="#bib-donl">DONL</a></cite>] defines the following:
         <ul>
           <li>
-    <span class="index-term" data-href="" id="index-term-donl" tabindex="0" aria-haspopup="dialog">[[[DONL]]]</span>
+    <span class="index-term" data-href="https://data.overheid.nl/" id="index-term-data-overheid-nl" tabindex="0" aria-haspopup="dialog">data.overheid.nl</span>
   </li>
         </ul>
       </li>
@@ -487,7 +542,7 @@ D</code></pre>
 
 
 
-<div class="mermaidTooltip" style="opacity: 0;"></div><section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
+<section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
     <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
     <dl class="bibliography"><dt id="bib-semver">[SemVer]</dt><dd>
       <a href="https://semver.org"><cite>Semantic Versioning 2.0.0</cite></a>. T. Preston-Werner. June 2013. URL: <a href="https://semver.org">https://semver.org</a>
@@ -497,24 +552,68 @@ D</code></pre>
     <dl class="bibliography"><dt id="bib-data_eu">[DATA_EU]</dt><dd>
       <em class="respec-offending-element">Reference not found.</em>
     </dd><dt id="bib-dcat_20">[DCAT_20]</dt><dd>
-      <em class="respec-offending-element">Reference not found.</em>
+      <a href="https://www.w3.org/TR/vocab-dcat-2/" id="ref-for-index-term-data-catalog-vocabulary-dcat-version-2-3"><cite>Data Catalog Vocabulary (DCAT) - Version 2</cite></a>. World Wide Web Consortium. February 2020. URL: <a href="https://www.w3.org/TR/vocab-dcat-2/" id="ref-for-index-term-data-catalog-vocabulary-dcat-version-2-4">https://www.w3.org/TR/vocab-dcat-2/</a>
     </dd><dt id="bib-dcatap_21">[DCATAP_21]</dt><dd>
-      <em class="respec-offending-element">Reference not found.</em>
+      <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210" id="ref-for-index-term-dcat-ap-2-1-2"><cite>DCAT-AP 2.1</cite></a>. The Publications Office of the European Union.. URL: <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210" id="ref-for-index-term-dcat-ap-2-1-3">https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210</a>
     </dd><dt id="bib-donl">[DONL]</dt><dd>
-      <em class="respec-offending-element">Reference not found.</em>
+      <a href="https://data.overheid.nl"><cite>data.overheid.nl</cite></a>. Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties.. URL: <a href="https://data.overheid.nl">https://data.overheid.nl</a>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-donl" aria-label="Links in this document to definition: [[[DONL]]]">
+  </p><div class="mermaidTooltip" style="opacity: 0;"></div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-data_eu" aria-label="Links in this document to definition: [[[DATA_EU]]]">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="#index-term-donl" aria-label="Permalink for definition: [[[DONL]]]. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="#index-term-data_eu" aria-label="Permalink for definition: [[[DATA_EU]]]. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
       <li>Not referenced in this document.</li>
     </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-data-catalog-vocabulary-dcat-version-2" aria-label="Links in this document to definition: Data Catalog Vocabulary (DCAT) - Version 2">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="https://www.w3.org/TR/vocab-dcat-2/" aria-label="Permalink for definition: Data Catalog Vocabulary (DCAT) - Version 2. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-index-term-data-catalog-vocabulary-dcat-version-2-1" title="§ Samenvatting">§ Samenvatting</a> 
+  </li><li>
+    <a href="#ref-for-index-term-data-catalog-vocabulary-dcat-version-2-2" title="§ 1.1 Introductie">§ 1.1 Introductie</a> 
+  </li><li>
+    <a href="#ref-for-index-term-data-catalog-vocabulary-dcat-version-2-3" title="§ B.2 Informatieve referenties">§ B.2 Informatieve referenties</a> <a href="#ref-for-index-term-data-catalog-vocabulary-dcat-version-2-4" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-dcat-ap-2-1" aria-label="Links in this document to definition: DCAT-AP 2.1">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210" aria-label="Permalink for definition: DCAT-AP 2.1. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-index-term-dcat-ap-2-1-1" title="§ 1.1 Introductie">§ 1.1 Introductie</a> 
+  </li><li>
+    <a href="#ref-for-index-term-dcat-ap-2-1-2" title="§ B.2 Informatieve referenties">§ B.2 Informatieve referenties</a> <a href="#ref-for-index-term-dcat-ap-2-1-3" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-data-overheid-nl" aria-label="Links in this document to definition: data.overheid.nl">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="https://data.overheid.nl/" aria-label="Permalink for definition: data.overheid.nl. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-index-term-data-overheid-nl-1" title="§ Samenvatting">§ Samenvatting</a> 
+  </li><li>
+    <a href="#ref-for-index-term-data-overheid-nl-2" title="§ 1.1 Introductie">§ 1.1 Introductie</a> 
+  </li>
+  </ul>
     </div><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
@@ -737,6 +836,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel" style="background-color: #32a852;">MinBZK Standaard - Werkversie</div><div id="ddiagram-1"><svg id="diagram-1" width="400" xmlns="http://www.w3.org/2000/svg" height="100" viewBox="768 0 512 512"><style>
-#diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g></g><g><path class="error-icon" d="m411.313,123.313c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32-9.375,9.375-20.688-20.688c-12.484-12.5-32.766-12.5-45.25,0l-16,16c-1.261,1.261-2.304,2.648-3.31,4.051-21.739-8.561-45.324-13.426-70.065-13.426-105.867,0-192,86.133-192,192s86.133,192 192,192 192-86.133 192-192c0-24.741-4.864-48.327-13.426-70.065 1.402-1.007 2.79-2.049 4.051-3.31l16-16c12.5-12.492 12.5-32.758 0-45.25l-20.688-20.688 9.375-9.375 32.001-31.999zm-219.313,100.687c-52.938,0-96,43.063-96,96 0,8.836-7.164,16-16,16s-16-7.164-16-16c0-70.578 57.422-128 128-128 8.836,0 16,7.164 16,16s-7.164,16-16,16z"></path><path class="error-icon" d="m459.02,148.98c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l16,16c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16.001-16z"></path><path class="error-icon" d="m340.395,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688 6.25-6.25 6.25-16.375 0-22.625l-16-16c-6.25-6.25-16.375-6.25-22.625,0s-6.25,16.375 0,22.625l15.999,16z"></path><path class="error-icon" d="m400,64c8.844,0 16-7.164 16-16v-32c0-8.836-7.156-16-16-16-8.844,0-16,7.164-16,16v32c0,8.836 7.156,16 16,16z"></path><path class="error-icon" d="m496,96.586h-32c-8.844,0-16,7.164-16,16 0,8.836 7.156,16 16,16h32c8.844,0 16-7.164 16-16 0-8.836-7.156-16-16-16z"></path><path class="error-icon" d="m436.98,75.605c3.125,3.125 7.219,4.688 11.313,4.688 4.094,0 8.188-1.563 11.313-4.688l32-32c6.25-6.25 6.25-16.375 0-22.625s-16.375-6.25-22.625,0l-32,32c-6.251,6.25-6.251,16.375-0.001,22.625z"></path><text class="error-text" x="1240" y="250" font-size="150px" style="text-anchor: middle;">Syntax error in graph</text><text class="error-text" x="1050" y="400" font-size="100px" style="text-anchor: middle;">mermaid version 9.0.0</text></g></svg></div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel" style="background-color: #32a852;">MinBZK Standaard - Werkversie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
