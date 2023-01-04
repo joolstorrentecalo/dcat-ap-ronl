@@ -3,31 +3,35 @@ var respecConfig = {
   useLabel: true,
   license: "cc0",
   specStatus: "WV",
-  specType: "HR",
-  pubDomain: "dk",
-  shortName: "template",
-  publishDate: "2022-06-24",
+  specType: "st",
+  pubDomain: "md",
+  shortName: "actueel",
+  publishDate: "2023-01-04",
   publishVersion: "0.0.1",
-  title: "titleText",
+  title: "DCAT-AP-RONL (concept)",
   // previousPublishVersion: "(none)",
-  content: {"ch01": "informative", "ch02": "", "mermaid": ""},
+  content: { "ch01": "informative", "ch02": "", "mermaid": "" },
   editors:
     [
       {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        name: "Mildo van Staden",
+        mailto: "Mildo.Staden@minbzk.nl",
+        company: "BZK",
+        companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
       }
     ],
   authors:
     [
       {
-        name: "Logius Standaarden",
-        company: "Logius",
-        companyURL: "https://github.com/Logius-standaarden",
+        name: "Hayo Schreijer",
+        url: "https://www.dexes.nl",
+      },
+      {
+        name: "Steven Gort",
+        url: "https://www.ictu.nl",
       }
     ],
-  github: "https://github.com/Logius-standaarden/ReSpec-template",
+  github: "https://github.com/MinBZK/dcat-ap-ronl",
 
 
   // Create PDF and link to file in header:
