@@ -1,6 +1,7 @@
 var respecConfig = {
   useLogo: true,
   useLabel: true,
+  isPreview: true,
   license: "cc0",
   specStatus: "WV",
   specType: "st",
