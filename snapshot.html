@@ -306,13 +306,14 @@ ul.index code{color:inherit}
       "date": "",
       "id": "donl"
     },
-    "DAT_EU": {
+    "DATA_EU": {
       "href": "https://data.europa.eu/en",
       "title": "Semantic Versioning 2.0.0",
       "authors": [
         "The Publications Office of the European Union."
       ],
-      "date": ""
+      "date": "",
+      "id": "data_eu"
     },
     "DCATAP_21": {
       "href": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210",
@@ -373,7 +374,7 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/base.css"></head>
 
-<body class="h-entry toc-inline"><div class="head">
+<body class="h-entry"><div class="head">
     <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg" width="44">
   </a> <h1 id="title" class="title">DCAT-AP-RONL (concept)</h1>
     <h2 id="subtitle" class="subtitle">Het applicatie profiel van de Europese DCAT-AP standaard voor uitwisseling met regels.overheid.nl</h2>
@@ -436,15 +437,15 @@ ul.index code{color:inherit}
 </section>
   <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#introductie"><bdi class="secno">1.1 </bdi>Introductie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.1 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.2 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.3 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">5. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav><section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
 <section id="introductie"><div class="header-wrapper"><h3 id="x1-1-introductie"><bdi class="secno">1.1 </bdi>Introductie</h3><a class="self-link" href="#introductie" aria-label="Permalink for Section 1.1"></a></div>
-<p>De Data Catalog vocabulaire (DCAT) is een standaard met als doel gepubliceerde gegevens en gegevensdiensten te beschrijven. Daardoor kunnen potentiële gebruikers beoordelen of de aangeboden gegevens voor hen relevant zijn en geschikt zijn voor hun gebruik. Dit selectieproces kan ook (gedeeltelijk) automatisch uitgevoerd worden. De geselecteerde bronnen kunnen dankzij de <a data-link-type="dfn" class="respec-offending-element" title="Linking error: not matching `<dfn>`" id="respec-offender-linking-error-not-matching-dfn">DCAT beschrijving</a>en efficiënt benaderd worden voor gebruik, of na detailonderzoek alsnog worden verworpen.</p>
-<p>Daarnaast is het gebruikelijk om <a data-link-type="dfn" class="respec-offending-element" title="Linking error: not matching `<dfn>`" id="respec-offender-linking-error-not-matching-dfn-0">DCAT beschrijving</a>en op centrale systemen te verzamelen – bekend als "harvesting" – om overzichten te maken van alle aangeboden informatie in een bepaald domein, bijvoorbeeld een land of volgens andere criteria. Deze centrale DCAT registers maken het eenvoudig voor gebruikers om door een groot aanbod te zoeken naar nuttige gegevens en data services.</p>
-<p><cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl">data.overheid.nl</a></cite> is zo'n DCAT dataportaal van de Nederlandse overheid. Een voorbeeld van een ander portaal is die van de EU, namelijk <a data-matched-text="[[[DATA_EU]]]" class="respec-offending-element" title="Couldn't find a match for &quot;DATA_EU&quot;" id="respec-offender-couldn-t-find-a-match-for-data_eu">[[[DATA_EU]]]</a>. De EU leest de DCAT data van data.overheid.nl, daardoor zijn alle datasets van data.overheid.nl ook op data.europa.eu te vinden. Het gebruik van DCAT maakt dit soort cummulatieve verzamelingen mogelijk.</p>
+<p>De Data Catalog vocabulaire (DCAT) is een standaard met als doel gepubliceerde gegevens en gegevensdiensten te beschrijven. Daardoor kunnen potentiële gebruikers beoordelen of de aangeboden gegevens voor hen relevant zijn en geschikt zijn voor hun gebruik. Dit selectieproces kan ook (gedeeltelijk) automatisch uitgevoerd worden. De geselecteerde bronnen kunnen dankzij de DCAT beschrijvingen efficiënt benaderd worden voor gebruik, of na detailonderzoek alsnog worden verworpen.</p>
+<p>Daarnaast is het gebruikelijk om DCAT beschrijvingen op centrale systemen te verzamelen – bekend als "harvesting" – om overzichten te maken van alle aangeboden informatie in een bepaald domein, bijvoorbeeld een land of volgens andere criteria. Deze centrale DCAT registers maken het eenvoudig voor gebruikers om door een groot aanbod te zoeken naar nuttige gegevens en data services.</p>
+<p><cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl">data.overheid.nl</a></cite> is zo'n DCAT dataportaal van de Nederlandse overheid. Een voorbeeld van een ander portaal is die van de EU, namelijk <cite><a data-matched-text="[[[DATA_EU]]]" href="https://data.europa.eu/en" id="ref-for-index-term-semantic-versioning-2-0-0-1">Semantic Versioning 2.0.0</a></cite>. De EU leest de DCAT data van data.overheid.nl, daardoor zijn alle datasets van data.overheid.nl ook op data.europa.eu te vinden. Het gebruik van DCAT maakt dit soort cummulatieve verzamelingen mogelijk.</p>
 <p>Het doel van het DCAT-AP-DONL profiel is om betere beschrijvingen te verzamelen in <cite><a data-matched-text="[[[DONL]]]" href="https://data.overheid.nl">data.overheid.nl</a></cite>. Het is ietwat uitgebreider dan de onderliggende <cite><a data-matched-text="[[[DCATAP_21]]]" href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/dcat-application-profile-data-portals-europe/release/210" id="ref-for-index-term-dcat-ap-2-1-1">DCAT-AP 2.1</a></cite> en <cite><a data-matched-text="[[[DCAT_20]]]" href="https://www.w3.org/TR/vocab-dcat-2/" id="ref-for-index-term-data-catalog-vocabulary-dcat-version-2-2">Data Catalog Vocabulary (DCAT) - Version 2</a></cite> profielen van het W3C, zodat het vinden van de juiste gegevens en gegevensdiensten nog makkelijker wordt.</p>
 <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
-Deze tekst is de introductie van het [DCAT-AP-DONL](https://dataoverheid.github.io/dcat-ap-donl/) toepassingsprofiel .
+Deze tekst is de introductie van het <a href="https://dataoverheid.github.io/dcat-ap-donl/" target="_blank">DCAT-AP-DONL 2.0</a> toepassingsprofiel .
 </p></div>
 
-<p>Doel van dit DCAT profiel is om beschrijvingen van <strong>regels</strong> te verzamelen in regels.overheid.nl die compatibel zijn met het DCAT-AP-DONL profiel voor <a href="https://data.overheid.nl/" id="ref-for-index-term-data-overheid-nl-2">data.overheid.nl</a>.</p>
+<p>Doel van dit DCAT profiel is om beschrijvingen van <strong>regels</strong> te verzamelen in <a href="https://regels.overheid.nl/">regels.overheid.nl</a> die compatibel zijn met het DCAT-AP-DONL profiel voor <a href="https://data.overheid.nl/" id="ref-for-index-term-data-overheid-nl-2">data.overheid.nl</a>.</p>
 <p>Dit toepassingsprofiel blijft in ontwikkeling. Commentaren, problemen, wensen e.d. kunnen als issue worden gemeld op de <a href="https://github.com/MinBZK/dcat-ap-ronl" target="_blank">Github pagina</a>.</p></section></section><section id="meer-inhoud"><div class="header-wrapper"><h2 id="x2-meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 2."></a></div>
 <section id="afbeeldingen"><div class="header-wrapper"><h3 id="x2-1-afbeeldingen"><bdi class="secno">2.1 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 2.1"></a></div>
 <p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">5. </bdi>Lijst met figuren</a>.</p>
@@ -512,7 +513,7 @@ Deze tekst is de introductie van het [DCAT-AP-DONL](https://dataoverheid.github.
         [<cite><a class="bibref" data-link-type="biblio" href="#bib-data_eu">DATA_EU</a></cite>] defines the following:
         <ul>
           <li>
-    <span class="index-term" data-href="" id="index-term-data_eu" tabindex="0" aria-haspopup="dialog">[[[DATA_EU]]]</span>
+    <span class="index-term" data-href="https://data.europa.eu/en" id="index-term-semantic-versioning-2-0-0" tabindex="0" aria-haspopup="dialog">Semantic Versioning 2.0.0</span>
   </li>
         </ul>
       </li><li>
@@ -550,7 +551,7 @@ Deze tekst is de introductie van het [DCAT-AP-DONL](https://dataoverheid.github.
   </section><section id="informatieve-referenties">
     <div class="header-wrapper"><h3 id="b-2-informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.2"></a></div>
     <dl class="bibliography"><dt id="bib-data_eu">[DATA_EU]</dt><dd>
-      <em class="respec-offending-element">Reference not found.</em>
+      <a href="https://data.europa.eu/en" id="ref-for-index-term-semantic-versioning-2-0-0-2"><cite>Semantic Versioning 2.0.0</cite></a>. The Publications Office of the European Union.. URL: <a href="https://data.europa.eu/en" id="ref-for-index-term-semantic-versioning-2-0-0-3">https://data.europa.eu/en</a>
     </dd><dt id="bib-dcat_20">[DCAT_20]</dt><dd>
       <a href="https://www.w3.org/TR/vocab-dcat-2/" id="ref-for-index-term-data-catalog-vocabulary-dcat-version-2-3"><cite>Data Catalog Vocabulary (DCAT) - Version 2</cite></a>. World Wide Web Consortium. February 2020. URL: <a href="https://www.w3.org/TR/vocab-dcat-2/" id="ref-for-index-term-data-catalog-vocabulary-dcat-version-2-4">https://www.w3.org/TR/vocab-dcat-2/</a>
     </dd><dt id="bib-dcatap_21">[DCATAP_21]</dt><dd>
@@ -560,16 +561,20 @@ Deze tekst is de introductie van het [DCAT-AP-DONL](https://dataoverheid.github.
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="mermaidTooltip" style="opacity: 0;"></div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-data_eu" aria-label="Links in this document to definition: [[[DATA_EU]]]">
+  </p><div class="mermaidTooltip" style="opacity: 0;"></div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-semantic-versioning-2-0-0" aria-label="Links in this document to definition: Semantic Versioning 2.0.0">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="#index-term-data_eu" aria-label="Permalink for definition: [[[DATA_EU]]]. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="https://data.europa.eu/en" aria-label="Permalink for definition: Semantic Versioning 2.0.0. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
-      <li>Not referenced in this document.</li>
-    </ul>
+    <li>
+    <a href="#ref-for-index-term-semantic-versioning-2-0-0-1" title="§ 1.1 Introductie">§ 1.1 Introductie</a> 
+  </li><li>
+    <a href="#ref-for-index-term-semantic-versioning-2-0-0-2" title="§ B.2 Informatieve referenties">§ B.2 Informatieve referenties</a> <a href="#ref-for-index-term-semantic-versioning-2-0-0-3" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-index-term-data-catalog-vocabulary-dcat-version-2" aria-label="Links in this document to definition: Data Catalog Vocabulary (DCAT) - Version 2">
       <span class="caret"></span>
       <div>
