@@ -161,7 +161,7 @@ var organisationConfig = {
     },
     "DATA_EU": {
       href: "https://data.europa.eu/en",
-      title: "Semantic Versioning 2.0.0",
+      title: "data.europa.eu",
       authors: ["The Publications Office of the European Union."],
       date: ""
     },
