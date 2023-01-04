@@ -3,7 +3,7 @@ var organisationConfig = {
   nl_organisationName: "MinBZK",
   nl_organisationStylesURL:
     "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
-  nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
+//  nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
   logos: [{
     src: "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg",
     alt: "Logius",
