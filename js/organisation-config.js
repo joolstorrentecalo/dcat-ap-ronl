@@ -153,6 +153,12 @@ var organisationConfig = {
       authors: ["T. Preston-Werner"],
       date: "June 2013"
     },
+    "DDCATAPDONL_11NL": {
+      href: "https://dcat-ap-donl.readthedocs.io/en/latest/",
+      title: "DCAT-AP-DONL 1.1",
+      authors: ["Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties."],
+      date: ""
+    },
     "DONL": {
       href: "https://data.overheid.nl",
       title: "data.overheid.nl",
