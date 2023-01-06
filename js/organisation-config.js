@@ -165,6 +165,12 @@ var organisationConfig = {
       authors: ["Kennis- en exploitatiecentrum voor Officiële Overheidspublicaties."],
       date: ""
     },
+    "RONL": {
+      href: "https://regels.overheid.nl",
+      title: "regels.overheid.nl",
+      authors: ["Heeft nog geen officiële status..."],
+      date: ""
+    },
     "DATA_EU": {
       href: "https://data.europa.eu/en",
       title: "data.europa.eu",
