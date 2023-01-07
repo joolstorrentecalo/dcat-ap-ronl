@@ -1,7 +1,7 @@
 Deze specificatie is onderdeel van [[[RONL]]].
 
 <p class="note" title="scope">
-Waar we het in deze specificatie over 'regels' hebben, bedoelen we óók 'algoritmes'.</p>
+Waar we het in deze specificatie over <b>regels</b> hebben, bedoelen we óók <b>algoritmes</b>.</p>
 
 Doel van dit DCAT profiel is om beschrijvingen van regels te verzamelen in [[[RONL]]] die compatibel zijn met het DCAT-AP-DONL profiel voor [[[DONL]]].
 
