@@ -1,12 +1,7 @@
 Deze specificatie is onderdeel van [[[RONL]]].
 
-<p class="note" title="algoritmeregister">
-Waar we het in deze specificatie over 'regels' hebben, bedoelen we óók 'algoritmes'.
-
-De overheid werkt steeds meer digitaal en gebruikt daarvoor steeds vaker algoritmes. Omdat digitalisering niet vanzelfsprekend goed gaat, werkt de overheid aan transparante en verantwoorde inzet van die algoritmes. Zodat de informatie over de algoritmes die de overheid gebruikt voor iedereen beschikbaar is: burgers, hun belangenbehartigers, de media en toezichthouders.
-
-Het ministerie van Binnenlandse Zaken en Koninkrijksrelaties bouwt door aan het <a href="https://algoritmes.overheid.nl/" target="_blank">Algoritmeregister van de Nederlandse overheid</a> dat in december 2022 is gelanceerd.
-</p>
+<p class="note" title="scope">
+Waar we het in deze specificatie over 'regels' hebben, bedoelen we óók 'algoritmes'.</p>
 
 Doel van dit DCAT profiel is om beschrijvingen van regels te verzamelen in [[[RONL]]] die compatibel zijn met het DCAT-AP-DONL profiel voor [[[DONL]]].
 
