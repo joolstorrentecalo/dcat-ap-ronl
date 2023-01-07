@@ -180,7 +180,7 @@ var organisationConfig = {
     "RONL": {
       href: "https://regels.overheid.nl",
       title: "regels.overheid.nl",
-      authors: ["Heeft nog geen officiële status..."],
+      authors: ["ministerie van Binnenlandse Zaken en Koninkrijksrelaties."],
       date: ""
     },
     "DATA_EU": {
