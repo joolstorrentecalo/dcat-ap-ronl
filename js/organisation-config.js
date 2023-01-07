@@ -153,6 +153,18 @@ var organisationConfig = {
       authors: ["T. Preston-Werner"],
       date: "June 2013"
     },
+    "ALGO": {
+      href: "https://algoritmes.overheid.nl/",
+      title: "Algoritmeregister",
+      authors: ["ministerie van Binnenlandse Zaken en Koninkrijksrelaties."],
+      date: "December 2022"
+    },
+    "ALGO-STAND": {
+      href: "https://standaard.algoritmeregister.org/standard",
+      title: "Nederlandse Algoritme Transparantie Standaard",
+      authors: ["ministerie van Binnenlandse Zaken en Koninkrijksrelaties."],
+      date: "December 2022"
+    },
     "DCATAPDONL_11": {
       href: "https://dcat-ap-donl.readthedocs.io/en/latest/",
       title: "DCAT-AP-DONL 1.1",
