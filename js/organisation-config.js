@@ -183,6 +183,18 @@ var organisationConfig = {
       authors: ["ministerie van Binnenlandse Zaken en Koninkrijksrelaties."],
       date: ""
     },
+    "UPL": {
+      href: "https://standaarden.overheid.nl/upl",
+      title: "Uniforme Productnamenlijst",
+      authors: ["Logius."],
+      date: ""
+    },
+    "Volledige-UPL": {
+      href: "https://standaarden.overheid.nl/owms/oquery/UPL-actueel.plain",
+      title: "Volledige UPL Actueel",
+      authors: ["Logius."],
+      date: ""
+    },
     "DATA_EU": {
       href: "https://data.europa.eu/en",
       title: "data.europa.eu",
