@@ -13,7 +13,7 @@ var respecConfig = {
   title: "DCAT-AP-RONL (concept)",
   // previousPublishVersion: "(none)",
   // content: { "ch01": "informative", "ch02": "", "mermaid": "" },
-  content: { "ch01": "informative", "ch02": "", "ch03": "", "ch04": "" },
+  content: { "ch01": "informative", "ch02": "", "ch03": "", "ch04": "", "ch05": "" },
   editors:
     [
       {
