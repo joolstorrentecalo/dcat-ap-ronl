@@ -183,6 +183,12 @@ var organisationConfig = {
       authors: ["ministerie van Binnenlandse Zaken en Koninkrijksrelaties."],
       date: ""
     },
+    "LM": {
+      href: "https://open-regels.nl/lm/delegitimaat/1.0.0/",
+      title: "De LegitiMaat",
+      authors: ["ministerie van Binnenlandse Zaken en Koninkrijksrelaties."],
+      date: "Juli 2022"
+    },
     "UPL": {
       href: "https://standaarden.overheid.nl/upl",
       title: "Uniforme Productnamenlijst",
