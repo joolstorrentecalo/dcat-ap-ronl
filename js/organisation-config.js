@@ -160,8 +160,8 @@ var organisationConfig = {
       date: "December 2022"
     },
     "ALGO-STAND": {
-      href: "https://standaard.algoritmeregister.org/standard",
-      title: "Nederlandse Algoritme Transparantie Standaard",
+      href: "https://github.com/MinBZK/Algoritmeregister/blob/main/schema.json",
+      title: "Nederlandse Algoritme MetaStandaard",
       authors: ["ministerie van Binnenlandse Zaken en Koninkrijksrelaties."],
       date: "December 2022"
     },
